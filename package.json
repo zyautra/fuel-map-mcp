@@ -1,0 +1,32 @@
+{
+  "name": "fuel-map-mcp",
+  "version": "0.1.0",
+  "description": "MCP server for finding cheapest gas stations along driving routes in Korea (연료지도)",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "tsx --watch src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "dotenv": "^16.4.0",
+    "express": "^4.21.0",
+    "proj4": "^2.12.0",
+    "zod": "^3.25.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.0.0",
+    "@types/proj4": "^2.5.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.7.0",
+    "vitest": "^2.1.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
