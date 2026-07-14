@@ -1,7 +1,7 @@
 {
   "name": "fuel-map-mcp",
   "version": "0.1.0",
-  "description": "MCP server for finding cheapest gas stations along driving routes in Korea (연료지도)",
+  "description": "Fuel Station Compass(주유소 나침반) - MCP server for finding cheapest gas stations along driving routes in Korea",
   "type": "module",
   "main": "dist/index.js",
   "scripts": {

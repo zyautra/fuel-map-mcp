@@ -44,9 +44,7 @@ mcpServer.registerTool(
   "get_route",
   {
     description:
-      "Get driving directions between two locations using Fuel Map MCP (연료지도). " +
-      "Returns distance, duration, toll fare, taxi fare, and route coordinates " +
-      "from origin to destination via Kakao Mobility.",
+      "Retrieves route information between origin and destination using Fuel Station Compass(주유소 나침반).",
     annotations: getRouteAnnotations,
     inputSchema: {
       origin: z.string().describe("Origin address or place name (e.g. 'Gangnam Station')"),
@@ -106,8 +104,7 @@ mcpServer.registerTool(
   "find_cheapest_gas_stations_nearby",
   {
     description:
-      "Find the 5 cheapest gas stations near a location using Fuel Map MCP (연료지도). " +
-      "Searches for gas stations within the specified radius using Opinet real-time fuel price data.",
+      "Finds the 5 cheapest gas stations near a specific location using Fuel Station Compass(주유소 나침반).",
     annotations: findNearbyAnnotations,
     inputSchema: {
       location: z.string().describe("Address or place name (e.g. 'Gangnam Station')"),
@@ -178,9 +175,7 @@ mcpServer.registerTool(
   "find_cheapest_gas_stations_on_route",
   {
     description:
-      "Find the 5 cheapest gas stations along a driving route using Fuel Map MCP (연료지도). " +
-      "Samples the route every 2km and searches a 1km radius at each point " +
-      "for gas stations using Opinet real-time fuel price data.",
+      "Finds the 5 cheapest gas stations along a route using Fuel Station Compass(주유소 나침반).",
     annotations: findOnRouteAnnotations,
     inputSchema: {
       origin: z.string().describe("Origin address or place name (e.g. 'Gangnam Station')"),
